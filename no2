@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+float Median(float min, float max)
+{
+	float median;
+
+	median = (min+max) / 2;
+	return median;
+}
+
+int main ()
+{
+
+	float min, max, N, nilai;
+
+	cout <<"6(^__^) Welcome to Our Program (^__^)9";
+	cout << endl << endl;
+
+	cout <<"Masukkan N buah bilangan: ";
+	cin >> N;
+
+	cout << endl;
+	
+	cout <<"Masukkan Bilangan Pertama: ";
+	cin >> nilai;
+	
+	max = nilai;
+	min = nilai;
+
+	for (int i = 1; i < N; i++)
+	{
+		cout <<"Masukkan Bilangan Berikutnya: ";
+		cin >> nilai;
+
+		if (nilai > max)
+		{
+			max = nilai;
+		}
+		else if (nilai < min)
+		{
+			min = nilai;
+		}
+	}
+	cout << endl << endl;
+	cout <<"Nilai Maksimum: "<< max << endl;
+	cout <<"Nilai Minimum: "<< min << endl;
+	cout <<"Nilai Median: "<<Median(max,min) << endl << endl;
+
+	cout <<"Thanks For Try Our Program .... See You (^__^)"<< endl << endl;
+
+return 0;
+}
