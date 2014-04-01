@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int Max(int a, int b, int c)
+{
+	int max;
+	
+	if (a>b)
+	{
+		max = a;
+	}
+	else if (a<b)
+	{
+		max = b;
+	}
+	else
+	{	
+		max = c;
+	}
+
+	return max;
+}
+
+int main()
+{
+	int a,b,c;
+	cout<<"masukkan 3 buah bilangan: "<<endl;
+	cout<<"a = ";
+	cin>>a;
+	cout<<"b = ";
+	cin>>b;
+	cout<<"c = ";
+	cin>>c;
+
+	cout<<"nilai maksimalnya adalah: "<<Max(a,b,c)<<endl;
+
+return 0;
+
+}
